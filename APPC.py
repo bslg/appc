@@ -5,14 +5,14 @@ import statsmodels.api as sm
 
 
 
-cube = pd.read_excel(r'C:\Users\gobhuv\Desktop\Personal\APPC\cube.xlsx')
-fleet = pd.read_excel(r'C:\Users\gobhuv\Desktop\Personal\APPC\Fleet size.xlsx')
-hours = pd.read_excel(r'C:\Users\gobhuv\Desktop\Personal\APPC\hours.xlsx')
-spozh = pd.read_excel(r'C:\Users\gobhuv\Desktop\Personal\APPC\SPOZH.xlsx')
-vans = pd.read_excel(r'C:\Users\gobhuv\Desktop\Personal\APPC\Vans.xlsx')
-volume = pd.read_excel(r'C:\Users\gobhuv\Desktop\Personal\APPC\Volume.xlsx')
-zips = pd.read_excel(r'C:\Users\gobhuv\Desktop\Personal\APPC\Zips.xlsx')
-time = pd.read_excel(r'C:\Users\gobhuv\Desktop\Personal\APPC\Time.xlsx')
+cube = pd.read_excel(r'cube.xlsx')
+fleet = pd.read_excel(r'Fleet size.xlsx')
+hours = pd.read_excel(r'hours.xlsx')
+spozh = pd.read_excel(r'SPOZH.xlsx')
+vans = pd.read_excel(r'Vans.xlsx')
+volume = pd.read_excel(r'Volume.xlsx')
+zips = pd.read_excel(r'Zips.xlsx')
+time = pd.read_excel(r'Time.xlsx')
 small=50
 standard=80
 large=100
