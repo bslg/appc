@@ -62,7 +62,8 @@ v_6=pd.merge(v_5,driver,on =['Station'],how ='outer')
 v_6['Projected Drivers']=(v_6['Active Drivers']*(1-v_6['Attrition'])*v_6['Average Days Worked'])/7
 
 v_6['Drivers Needed']=(v_6['Volume']/v_6['SPR'])*7/v_6['Average Days Worked']
-v_6['Additional Drivers Needed']=v_6['Drivers Needed']-v_6['Projected Drivers']
+v_6['diff']=v_6['Drivers Needed']-v_6['Projected Drivers']
+v_6['Additional Drivers Needed']=v_6['diff'].apply(lambda x: x if x >0 else 0)
 
 v_6
 
