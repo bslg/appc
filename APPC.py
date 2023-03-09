@@ -65,3 +65,6 @@ v_6['Drivers Needed']=(v_6['Volume']/v_6['SPR'])*7/v_6['Average Days Worked']
 v_6['Additional Drivers Needed']=v_6['Drivers Needed']-v_6['Projected Drivers']
 
 v_6
+
+v_7=v_6.groupby('Station').agg({'Additional Drivers Needed': max}).round()
+v_7
