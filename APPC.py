@@ -56,6 +56,10 @@ v_5=v_5.drop('diff', axis=1)
 
 v_5
 
+routes_plan=v_5[['Station','Date','Routes','Routes_Needed','Additional_Routes_Needed']]
+routes_plan=routes_plan[routes_plan['Additional_Routes_Needed'] != 0]
+routes_plan
+
 driver = pd.read_excel(r'Drivers.xlsx')
 v_6=pd.merge(v_5,driver,on =['Station'],how ='outer')
 
